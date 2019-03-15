@@ -1,0 +1,11 @@
+<div>
+   <ul>
+
+
+     <li class="food-list"  *ngFor="let food of foods">
+       <h3><a [routerLink]="['/foodDetail', food.id]"   >{{food.title}}</a></h3>
+       <p style="text-style:capitalize">{{food.description}} </p>
+
+     </li>
+   </ul>
+</div>
